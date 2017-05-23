@@ -1,0 +1,6 @@
+bottle==0.12.13
+ntlm-auth==1.0.3
+pypiwin32==219
+requests==2.14.2
+requests-ntlm==1.0.0
+six==1.10.0

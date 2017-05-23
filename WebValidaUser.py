@@ -8,15 +8,14 @@
 # Versao: 2.0
 ############################################################################################################
 
-from bottle import route, run, template, response,static_file, post, request
+from bottle import Bottle, route, run, template, response,static_file, post, request
 import json
 import requests
 from requests_ntlm import HttpNtlmAuth
 import logging
 import logging.handlers
-from daemon import runner
 
-path="/tmp/"
+path="c:/tmp/"
 logDir=path+"/WebValidaUsers.log"
 
 
