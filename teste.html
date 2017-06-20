@@ -1,0 +1,29 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<title>Teste do Post </title>
+</head>
+<body>
+   Nome:
+   <input id="nome"  />
+   Senha:
+   <input id="senha" type="password"   />
+   <button id="vai" > Vai </button>
+	<script>
+	
+	$( "#vai" ).click(function( event ) { 
+		$.ajax({
+		type: 'POST',
+		url: 'http://localhost:8000/valida',
+		data: JSON.stringify({ username: document., password: 'D0ugl42S1r0n1' }), //'{"username":"dsironi","password":"D0ugl42S1r0n1"}', // or JSON.stringify ({name: 'jonas'}),
+		success: function(data) { alert('data: ' + data.retorno); },
+		contentType: "application/json",
+		dataType: 'JSON'
+		});
+	});s
+	  
+	</script>
+   
+   
+</body>
+</html>
